@@ -111,9 +111,10 @@ Aqui estão as principais rotas disponíveis:
 Na pasta raiz do projeto, você pode encontrar o arquivo `equipamentos.json`. Importe este arquivo no Postman para ter acesso a todas as requisições pré-configuradas.
 
 
-Desenvolvido por **[Matheus]**
+Desenvolvido por **Matheus de Assis**
 
 ```
 
 
 ```
+
