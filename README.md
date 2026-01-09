@@ -114,7 +114,3 @@ Na pasta raiz do projeto, você pode encontrar o arquivo `equipamentos.json`. Im
 Desenvolvido por **Matheus de Assis**
 
 ```
-
-
-```
-
