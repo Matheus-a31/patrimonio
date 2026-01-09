@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "b1dd7744-3e14-4651-8375-793c30278b01",
+		"name": "Patrimonio API - Atualizado",
+		"description": "Coleção para testar o CRUD de Equipamentos com rotas ajustadas (com barra no final)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51352606",
+		"_collection_link": "https://matheus-a31-437279.postman.co/workspace/Matheus-Oliveira's-Workspace~4a9cbf68-8de1-4fc8-83fc-adcea1255ac2/collection/51352606-b1dd7744-3e14-4651-8375-793c30278b01?action=share&source=collection_link&creator=51352606"
+	},
+	"item": [
+		{
+			"name": "1. Criar Equipamento (POST /)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Notebook Dell Latitude\",\n    \"tipo\": \"Notebook\",\n    \"numeroSerie\": \"SN100200\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/equipamentos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equipamentos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Listar Todos (GET /)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/equipamentos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equipamentos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Buscar por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/equipamentos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equipamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Buscar por Tipo (Lista)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/equipamentos/tipo/Notebook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equipamentos",
+						"tipo",
+						"Notebook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Buscar por Serial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/equipamentos/serial/SN100200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equipamentos",
+						"serial",
+						"SN100200"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Atualizar Equipamento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Notebook Dell Latitude V2\",\n    \"tipo\": \"Notebook\",\n    \"numeroSerie\": \"SN100200\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/equipamentos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equipamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Excluir Equipamento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/equipamentos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equipamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
